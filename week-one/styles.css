@@ -216,6 +216,12 @@ button:hover {
   font-weight: 600;
 }
 
+.slack-shortcut-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 input:focus ~ .result-wrapper {
   display: block;
 }

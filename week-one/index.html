@@ -71,16 +71,30 @@
                   />
                   <span>Send new message</span>
                 </div>
-                <div class="suggestion-shortcut icon-wrapper">
-                  <img
-                    src="/assets/icons/command (1).svg"
-                    width="16px"
-                    alt="slack-icon"
-                  />
-                  <span
-                    style="color: #f4f4f4; font-size: 16px; padding-top: 2px"
-                    >M</span
-                  >
+                <div class="slack-shortcut-wrapper">
+                  <span>
+                    <u
+                      style="
+                        cursor: pointer;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #f4f4f4;
+                      "
+                    >
+                      Sign in to Slack</u
+                    >
+                  </span>
+                  <div class="suggestion-shortcut icon-wrapper">
+                    <img
+                      src="/assets/icons/command (1).svg"
+                      width="16px"
+                      alt="slack-icon"
+                    />
+                    <span
+                      style="color: #f4f4f4; font-size: 16px; padding-top: 2px"
+                      >M</span
+                    >
+                  </div>
                 </div>
               </div>
               <div class="suggestion-wrapper">
@@ -159,7 +173,8 @@
               <div style="margin-bottom: 24px">
                 <p>
                   "Keyword" did not match any tags currently used in
-                  projects.Please try again or <u>create a new tag</u>
+                  projects.Please try again or
+                  <u style="cursor: pointer">create a new tag</u>.
                 </p>
               </div>
               <button class="empty-wrapper">Clear Search</button>
