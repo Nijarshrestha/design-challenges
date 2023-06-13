@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Challenge - week one</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <center class="main-container">
+      <div class="search-wrapper">
+        <div class="input-wrapper">
+          <div><img src="/assets/icons/search-md.svg" alt="search-icon" /></div>
+          <input id="input" placeholder="Type a command or search" />
+          <div class="icon-wrapper">
+            <img
+              src="/assets/icons/command (1).svg"
+              width="16px"
+              height="auto"
+              alt="command-icon"
+            />
+            <span style="color: #f4f4f4; font-size: 20px; padding-top: 2px"
+              >/</span
+            >
+          </div>
+        </div>
+        <div class="result-container">
+          <div class="result-wrapper" id="results">
+            <div class="suggestions-container" id="suggestions">
+              <div class="suggestion-wrapper">
+                <div class="suggestion">
+                  <img src="/assets/icons/hash-02.svg" alt="hash-icon" />
+                  <span>Add tag</span>
+                </div>
+                <div class="suggestion-shortcut icon-wrapper">
+                  <img
+                    src="/assets/icons/command (1).svg"
+                    width="16px"
+                    alt="command-icon"
+                  />
+                  <span
+                    style="color: #f4f4f4; font-size: 16px; padding-top: 2px"
+                    >T</span
+                  >
+                </div>
+              </div>
+              <div class="suggestion-wrapper">
+                <div class="suggestion">
+                  <img src="/assets/icons/user-plus-01.svg" alt="user-icon" />
+                  <span>Assign to...</span>
+                </div>
+                <div class="suggestion-shortcut icon-wrapper">
+                  <img
+                    src="/assets/icons/command (1).svg"
+                    width="16px"
+                    alt="command-icon"
+                  />
+                  <span
+                    style="color: #f4f4f4; font-size: 16px; padding-top: 2px"
+                    >A</span
+                  >
+                </div>
+              </div>
+              <div class="suggestion-wrapper">
+                <div class="suggestion">
+                  <img
+                    src="/assets/icons/slack-logo-thin-svgrepo-com.svg"
+                    width="24px"
+                    alt="slack-icon"
+                  />
+                  <span>Send new message</span>
+                </div>
+                <div class="suggestion-shortcut icon-wrapper">
+                  <img
+                    src="/assets/icons/command (1).svg"
+                    width="16px"
+                    alt="slack-icon"
+                  />
+                  <span
+                    style="color: #f4f4f4; font-size: 16px; padding-top: 2px"
+                    >M</span
+                  >
+                </div>
+              </div>
+              <div class="suggestion-wrapper">
+                <div class="suggestion">
+                  <img src="/assets/icons/file-plus-03.svg" alt="file-icon" />
+                  <span>Create new file</span>
+                </div>
+                <div class="suggestion-shortcut icon-wrapper">
+                  <img
+                    src="/assets/icons/command (1).svg"
+                    width="16px"
+                    alt="command-icon"
+                  />
+                  <span
+                    style="color: #f4f4f4; font-size: 16px; padding-top: 2px"
+                    >N</span
+                  >
+                </div>
+              </div>
+              <div class="suggestion-wrapper">
+                <div class="suggestion">
+                  <img src="/assets/icons/folder-plus.svg" alt="folder-icon" />
+                  <span>Create new project</span>
+                </div>
+                <div class="suggestion-shortcut icon-wrapper">
+                  <img
+                    src="/assets/icons/command (1).svg"
+                    width="16px"
+                    alt="command-icon"
+                  />
+                  <img
+                    src="/assets/icons/arrow-block-up.svg"
+                    height="16px"
+                    alt="command-icon"
+                  />
+                  <span
+                    style="color: #f4f4f4; font-size: 16px; padding-top: 2px"
+                    >N</span
+                  >
+                </div>
+              </div>
+              <div class="suggestion-wrapper">
+                <div class="suggestion">
+                  <img src="/assets/icons/hash-02.svg" alt="hash-icon" />
+                  <span>Add tag</span>
+                </div>
+                <div class="suggestion-shortcut icon-wrapper">
+                  <img
+                    src="/assets/icons/command (1).svg"
+                    width="16px"
+                    alt="command-icon"
+                  />
+                  <span
+                    style="color: #f4f4f4; font-size: 16px; padding-top: 2px"
+                    >T</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="empty-result-container" id="empty-result">
+              <div class="spiral"></div>
+              <div class="spiral"></div>
+              <div class="spiral"></div>
+              <div class="spiral"></div>
+              <div class="spiral"></div>
+              <div class="spiral"></div>
+              <div class="spiral"></div>
+              <div class="spiral"></div>
+
+              <div class="empty-hash-icon-wrapper empty-wrapper">
+                <img src="/assets/icons/hash-02.svg" alt="hash-icon" />
+              </div>
+              <div>
+                <b>No tags found</b>
+              </div>
+              <div style="margin-bottom: 24px">
+                <p>
+                  "Keyword" did not match any tags currently used in
+                  projects.Please try again or <u>create a new tag</u>
+                </p>
+              </div>
+              <button class="empty-wrapper">Clear Search</button>
+            </div>
+          </div>
+          <div class="footer-container" id="footer">
+            <div class="footer-option">
+              <div class="footer-icon-wrapper">
+                <img src="/assets/icons/hash-01.svg" alt="command-icon" />
+              </div>
+              <span>tags</span>
+            </div>
+            <div class="footer-option">
+              <div class="footer-icon-wrapper">
+                <img src="/assets/icons/arrow-up.svg" alt="arrow-up" />
+              </div>
+              <div class="footer-icon-wrapper">
+                <img
+                  src="/assets/icons/arrow-up.svg"
+                  style="transform: rotate(180deg)"
+                  alt="arrow-down"
+                />
+              </div>
+              <span>navigate</span>
+            </div>
+            <div class="footer-option">
+              <div class="footer-icon-wrapper">
+                <img
+                  src="/assets/icons/reverse-right.svg"
+                  style="transform: rotate(180deg)"
+                  alt="command-icon"
+                />
+              </div>
+              <span>Open</span>
+            </div>
+            <div class="footer-option">
+              <div class="footer-icon-wrapper">esc</div>
+              <span>tags</span>
+            </div>
+            <div class="footer-option">
+              <div class="footer-icon-wrapper">
+                <img
+                  src="/assets/icons/arrow-up.svg"
+                  style="transform: rotate(270deg)"
+                  alt="command-icon"
+                />
+              </div>
+              <span>parent</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+  </body>
+  <script type="text/javascript" src="index.js"></script>
+</html>

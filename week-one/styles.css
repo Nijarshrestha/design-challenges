@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("./assets/images/dark-hills.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  background: none;
+  margin-top: 200px;
+}
+
+.search-wrapper {
+  width: 80%;
+  max-width: 700px;
+  border: 12px solid rgba(0, 0, 0, 0.12);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  background-color: rgba(22, 102, 102, 0.219);
+}
+
+.input-wrapper {
+  padding: 16px 20px;
+  border-radius: 12px;
+  outline: none;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+input {
+  outline: none;
+  width: 100%;
+  border: 0;
+  background: transparent;
+
+  color: rgb(221, 213, 213);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input::placeholder {
+  color: rgb(221, 213, 213);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  border: 1px solid #f4f4f456;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+.result-wrapper {
+  display: none;
+  border-top: 0.5px solid #a1a1a1b2;
+  border-bottom: 0.5px solid #a1a1a1b2;
+  padding: 16px 20px;
+  min-height: 350px;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-container {
+  padding: 16px 20px;
+  gap: 24px;
+  display: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #f4f4f4;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-icon-wrapper {
+  display: flex;
+  padding: 4px;
+  border: 1px solid #f4f4f456;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.empty-result-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 16px 96px;
+  font-size: 16px;
+  color: #f4f4f4;
+
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .empty-result-container {
+    padding: 16px 16px;
+  }
+
+  .main-container {
+    margin-top: 50px;
+  }
+}
+
+.empty-wrapper {
+  display: flex;
+  border: 1px solid #f4f4f456;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+button {
+  background: transparent;
+  color: #f4f4f4;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #435a8f;
+}
+
+.spiral {
+  border: 0.5px solid #ddcaca;
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.spiral:nth-child(1) {
+  padding: 50px;
+  border-radius: 50px;
+  top: -10px;
+  opacity: 0.7;
+}
+
+.spiral:nth-child(2) {
+  padding: 100px;
+  border-radius: 100px;
+  top: -50px;
+  opacity: 0.6;
+}
+
+.spiral:nth-child(3) {
+  padding: 150px;
+  border-radius: 150px;
+  top: -100px;
+  opacity: 0.5;
+}
+.spiral:nth-child(4) {
+  padding: 200px;
+  border-radius: 200px;
+  top: -150px;
+  opacity: 0.4;
+}
+.spiral:nth-child(5) {
+  padding: 250px;
+  border-radius: 250px;
+  top: -200px;
+  opacity: 0.3;
+}
+.spiral:nth-child(6) {
+  padding: 300px;
+  border-radius: 300px;
+  top: -250px;
+  opacity: 0.2;
+}
+
+.suggestions-container {
+  display: none;
+}
+
+.suggestion-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 16px 8px;
+}
+
+.suggestion-wrapper:hover {
+  background: #435a8f;
+  border-radius: 10px;
+}
+
+.suggestion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #f4f4f4;
+  font-weight: 600;
+}
+
+input:focus ~ .result-wrapper {
+  display: block;
+}
