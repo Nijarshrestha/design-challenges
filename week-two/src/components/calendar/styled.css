@@ -1,0 +1,28 @@
+.calendar-container {
+  padding: 32px;
+  position: relative;
+  border-radius: 5px;
+  width: 900px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.calendar-container::before {
+  content: "";
+  background-image: url("./../../assets/pexels-may-barros-1260841.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.calendar {
+  z-index: 2;
+  opacity: 1;
+}

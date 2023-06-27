@@ -1,0 +1,21 @@
+.agendas-container {
+  width: 250px;
+  height: 500px;
+  padding: 24px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  position: relative;
+}
+
+img {
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 100px;
+  margin: 10px;
+}

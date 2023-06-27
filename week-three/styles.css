@@ -7,7 +7,7 @@ html,
 body {
   height: 100%;
   margin: 0;
-  background: #01060a;
+  background-color: #01060a;
 }
 
 body {
@@ -24,6 +24,7 @@ body {
   border: 1px solid #fff;
   position: relative;
   cursor: pointer;
+  transform: scale(3);
 }
 
 .toggle input {
@@ -43,9 +44,9 @@ input[type="checkbox"] + .slider::after {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: inherit;
   position: absolute;
   top: 2.5px;
+  background-color: inherit;
   box-shadow: inset 5px -4px white;
   transform: translateX(3px);
   transition: 0.4s;
@@ -58,8 +59,25 @@ input[type="checkbox"]:checked + .slider::after {
   border-radius: 50%;
   background-color: rgb(239, 255, 14);
   top: 2.5px;
-  position: absolute;
   transform: translateX(42px);
   box-shadow: inset 0px 0px 0px, 0px 0px 5px rgb(239, 255, 14);
   transition: 0.4s;
+}
+
+/* .image {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  z-index: -1;
+} */
+
+.input[type="checkbox"]:before .image {
+  position: absolute;
+}
+
+input[type="checkbox"]:checked + .image {
+  background-color: #2b7f3a;
 }
