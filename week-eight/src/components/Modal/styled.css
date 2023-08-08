@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: aliceblue;
+  background: linear-gradient(#dcdef7, #f6fafd);
   padding: 32px;
   border-radius: 10px;
   min-width: 300px;
