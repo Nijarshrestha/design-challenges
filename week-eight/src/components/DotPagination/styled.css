@@ -1,0 +1,11 @@
+.dot-wrapper {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(223, 213, 213);
+  cursor: pointer;
+}
+
+.active-dot {
+  background-color: blue;
+}

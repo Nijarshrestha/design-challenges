@@ -1,0 +1,52 @@
+.card-one-wrapper {
+  padding: 16px;
+  display: inline-block;
+  background-image: linear-gradient(
+    to top left,
+    #b700ff -22% -22%,
+    rgb(0, 119, 255) 100%
+  );
+  color: white;
+  border-radius: 10px;
+  width: 240px;
+  z-index: 2;
+  position: sticky;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.amount-wrapper {
+  display: flex;
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: normal;
+  gap: 2px;
+}
+
+.amount-diff-wrapper {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 10px;
+}
+
+.diff-wrapper {
+  background-color: rgba(0, 0, 0, 0.164);
+  display: block;
+  padding: 0px 4px;
+  border-radius: 5px;
+  line-height: 18px;
+}
+
+sup {
+  color: rgba(255, 249, 249, 0.562);
+  font-weight: 600;
+  vertical-align: text-top;
+}

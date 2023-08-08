@@ -1,0 +1,33 @@
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(
+    to right in oklab,
+    oklch(70% 0.5 340) -52% -52%,
+    oklch(90% 0.5 200) 122% 122%
+  );
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: #f6f6f6;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+.primary-btn {
+  background-color: #646cff;
+}
+
+.secondary-btn {
+  background-color: aliceblue;
+  border: 1px solid rgba(128, 128, 128, 0.39);
+  color: rgba(0, 0, 0, 0.705);
+}
+
+.full-width {
+  width: 100%;
+}

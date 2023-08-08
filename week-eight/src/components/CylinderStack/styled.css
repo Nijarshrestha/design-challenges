@@ -1,0 +1,7 @@
+.cylinder-wrapper {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.164);
+  display: flex;
+  position: relative;
+}

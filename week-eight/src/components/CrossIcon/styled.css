@@ -1,0 +1,6 @@
+.cross-icon-wrapper {
+  display: flex;
+  border-radius: 50%;
+  background-color: azure;
+  cursor: pointer;
+}

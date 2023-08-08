@@ -1,0 +1,12 @@
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: aliceblue;
+  padding: 32px;
+  border-radius: 10px;
+  min-width: 300px;
+  max-width: 450px;
+  box-shadow: 10px 10px 18px rgba(153, 152, 152, 0.637);
+}
